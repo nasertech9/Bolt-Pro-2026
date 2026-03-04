@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt Pro 2026 | AI Web Architect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Monaco Editor Loader -->
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js"></script>
+</head>
+
+<body>
+    <div id="app-container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">⚡</div>
+                <h1>Bolt Pro <span class="accent">2026</span></h1>
+            </div>
+            <div class="controls">
+                <button id="new-btn" title="Start New Site 2026">New Site</button>
+                <div class="view-toggle">
+                    <button id="toggle-editor" class="active">Editor</button>
+                    <button id="toggle-preview">Preview</button>
+                </div>
+                <button id="deploy-btn" class="primary-btn">Deploy 2026</button>
+            </div>
+        </header>
+
+        <main>
+            <aside id="sidebar">
+                <div class="sidebar-section">
+                    <div class="tree-header">PROJECT HISTORY</div>
+                    <ul id="history-list">
+                        <!-- History injected by JS -->
+                    </ul>
+                </div>
+                <div class="sidebar-divider"></div>
+                <div class="sidebar-section">
+                    <div class="tree-header">CURRENT FILES</div>
+                    <ul id="files-list">
+                        <!-- Files injected by JS -->
+                    </ul>
+                </div>
+            </aside>
+
+            <section id="content-area">
+                <div id="editor-container" class="visible"></div>
+                <div id="preview-container">
+                    <iframe id="live-preview" sandbox="allow-scripts allow-same-origin"></iframe>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div id="prompt-wrapper">
+                <span class="prompt-icon">✨</span>
+                <input type="text" id="prompt-input"
+                    placeholder="What should I build for you today? (e.g., 'A modern neon-styled portfolio')">
+                <button id="generate-btn">
+                    <span class="btn-text">Generate Site 2026</span>
+                    <div class="loader-ring hide"></div>
+                </button>
+            </div>
+        </footer>
+
+        <!-- Generation 2026 View -->
+        <div id="generation-2026-view" class="hide">
+            <div class="gen-content">
+                <div class="gen-loader">⚡</div>
+                <h2>Generating <span class="accent">Site 2026</span></h2>
+                <div class="status-steps" id="gen-steps">
+                    <div class="step active">Planner Agent: Configuring architecture...</div>
+                    <div class="step">Frontend Agent: Building HSL/Glass design...</div>
+                    <div class="step">Refactor Agent: Finalizing code integrity...</div>
+                </div>
+            </div>
+            <!-- Deploy 2026 View -->
+            <div id="deploy-2026-view" class="hide">
+                <div class="gen-content">
+                    <div class="gen-loader">🚀</div>
+                    <h2>Initializing <span class="accent">Deploy 2026</span></h2>
+                    <div class="status-steps">
+                        <div class="step">Worker Agent: Provisioning edge nodes...</div>
+                        <div class="step">BGP Agent: Propagating global routes...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+</body>
+
+</html>
